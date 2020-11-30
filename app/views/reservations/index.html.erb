@@ -1,12 +1,12 @@
 <div class='main'>
   <%= image_tag "main-car.jpg", class:'main-pict'%>
+  <% if user_signed_in? %>
   <p class='scroll'>SCROLL</p>
   <div class='contents'>
     <%= image_tag "calendar-1.png", class:'sub-pict'%>
     <div class="grid-1">
       <h1 class='text'>教習予約はこちらから</h1>
-      <%= link_to "ログイン", new_user_session_path, class: "btn btn-success btn-lg" %>
-      <%= link_to "新規登録", new_user_registration_path, class: "btn btn-success btn-lg" %>
+      <%= link_to "予約を取る", "#", class: "btn btn-success btn-lg" %>
     </div>
   </div>
   <div class='contents'>
@@ -23,4 +23,5 @@
       <%= link_to "動画を見る", "#", class: "btn btn-success btn-lg" %>
     </div>
   </div>
+  <% end %>
 </div>
