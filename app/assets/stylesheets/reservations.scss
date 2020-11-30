@@ -1,3 +1,62 @@
-// Place all the styles related to the reservations controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.main{
+  background-color: #f2f2f2;
+}
+
+img.main-pict{
+  width: 100%;
+  height: 70%;
+}
+
+.scroll{
+  display: flex;
+  align-items: center;
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: .4em;
+  text-align: center;
+  padding: 40px 0;
+}
+
+.scroll:before,
+.scroll:after{
+  border-top: 1px solid;
+  content: "";
+  flex-grow: 1;
+}
+
+.scroll:before{
+  margin: 0 1rem;
+}
+
+.scroll:after{
+  margin: 0 1rem;
+}
+
+.contents{
+  display: flex;
+}
+
+img.sub-pict{
+  width: 30%;
+  height: 30%;
+  margin: 0 0 50px 130px;
+}
+
+.grid-1{
+  width: 100vw;
+  text-align: center;
+  margin: auto;
+}
+
+.text{
+  width: 300px;
+  font-size: 25px;
+  border: dashed 2px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.btn{
+  margin: 0 20px;
+}
+
