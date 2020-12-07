@@ -15,11 +15,11 @@
 
 ## reservations テーブル
 
-| Column  | Type       | Options           |
-| ------- | ---------- | ----------------- |
-| date_id | integer    | null: false       |
-| time_id | integer    | null: false       |
-| user    | references | foreign_key: true |
+| Column         | Type       | Options           |
+| -------------- | ---------- | ----------------- |
+| create_time_id | integer    | null: false       |
+| start_time     | datetime   | null: false       |
+| user           | references | foreign_key: true |
 
 ### Association
 
