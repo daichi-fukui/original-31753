@@ -3,7 +3,17 @@ a{
   color: white;
 }
 
-.header_inner{
+.body{
+  display: flex;
+  flex-flow: column;
+  min-height: 100vh;
+}
+
+.rayout{
+  flex: 1;
+}
+
+.header-inner{
   display: flex;
   align-items: center;
   background-color: #003300;
@@ -12,9 +22,9 @@ a{
   height: 60px;
 }
 
-.school_name{
+.school-name{
   font-size: 25px;
-  margin: 0 250px 0 500px;
+  margin: 0 250px 0 580px;
   text-shadow: 
    2px  2px 1px black,
   -2px  2px 1px black,
@@ -38,12 +48,12 @@ a{
   background-color: #f2f2f2;
 }
 
-.footer_inner{
+.footer-inner{
   display: flex;
   justify-content: space-around;
 }
 
-.new{
+.overview{
   padding: 0.5em 1em;
   margin: 2em 0;
   color: #232323;
@@ -51,7 +61,7 @@ a{
   border-left: solid 10px #ffc06e;
 }
 
-.footer_logo{
+.footer-logo{
   background-color: #003300;
   color: white;
   text-align: center;
@@ -63,12 +73,13 @@ a{
 }
 
 .container{
+  height: 330px;
   margin: 20px 0;
   padding: 30px;
   box-shadow: 0 0 10px rgba(41,41,41,0.2);
 }
 
-.new_user{
+.new-user{
   padding: 20px;
   border: 1px solid #D8D8D8;
   border-radius: 5px;
@@ -102,7 +113,7 @@ input[type="submit"] {
   margin: 20px 0;
 }
 
-.name_color{
+.name-color{
   color: white;
   font-size: 20px;
 }
