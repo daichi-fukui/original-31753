@@ -9,6 +9,6 @@ class Reservation < ApplicationRecord
   validate  :date_not_before_today
 
   def date_not_before_today
-    errors.add(:start_time, "は翌日以降の日付を選択してください") if start_time.nil? || start_time < Date.today
+    errors.add(:start_time, "は翌日以降の日付を選択してください") if start_time.nil? || start_time < Date.tomorrow
   end
 end
