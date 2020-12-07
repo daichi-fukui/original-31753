@@ -1,4 +1,6 @@
 class ReservationsController < ApplicationController
+  before_action :set_reservation, only: [:edit, :update, :destroy]
+
   def index
   end
 
@@ -17,11 +19,9 @@ class ReservationsController < ApplicationController
   end
 
   def edit
-    @reservation = Reservation.find(params[:id])
   end
 
   def update
-    @reservation = Reservation.find(params[:id])
     if @reservation.update(reservation_params)
       redirect_to new_reservation_path
     else
@@ -30,7 +30,6 @@ class ReservationsController < ApplicationController
   end
 
   def destroy
-    @reservation = Reservation.find(params[:id])
     @reservation.destroy
     redirect_to new_reservation_path
   end
@@ -39,5 +38,9 @@ class ReservationsController < ApplicationController
 
   def reservation_params
     params.require(:reservation).permit(:create_time_id, :start_time).merge(user_id: current_user.id)
+  end
+
+  def set_reservation
+    @reservation = Reservation.find(params[:id])
   end
 end
