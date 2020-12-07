@@ -1,0 +1,6 @@
+ja:
+ activerecord:
+   attributes:
+     user:
+       family_name: 名字
+       first_name: 名前
