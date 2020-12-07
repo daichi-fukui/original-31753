@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   root to: "reservations#index"
   resources :reservations
   resources :videos, only: [:index]
+  resources :learnings, only: [:index]
 end
