@@ -24,7 +24,7 @@ a{
 
 .school-name{
   font-size: 25px;
-  margin: 0 250px 0 580px;
+  margin: 0 250px 0 550px;
   text-shadow: 
    2px  2px 1px black,
   -2px  2px 1px black,
@@ -73,6 +73,12 @@ a{
 }
 
 .container{
+  margin: 20px 0;
+  padding: 30px;
+  box-shadow: 0 0 10px rgba(41,41,41,0.2);
+}
+
+.container-sessions{
   height: 330px;
   margin: 20px 0;
   padding: 30px;

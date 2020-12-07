@@ -1,6 +1,6 @@
 <div class="contents rayout">
-  <div class="container">
-    <h2>ログイン</h2>
+  <div class="container-sessions">
+    <div class="h2">ログイン</div>
     <%= form_with model: @user, url: user_session_path, id: 'new_user', class: 'new_user', local: true do |f| %>
       <div class="field">
         <%= f.label :メールアドレス %><br />

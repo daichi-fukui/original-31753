@@ -1,27 +1,29 @@
-<div class='main'>
-  <%= image_tag "main-car.jpg", class:'main-pict'%>
-  <% if user_signed_in? %>
-  <p class='scroll'>SCROLL</p>
-  <div class='contents'>
-    <%= image_tag "calendar-1.png", class:'sub-pict'%>
-    <div class="grid-1">
-      <h1 class='text'>教習予約はこちらから</h1>
-      <%= link_to "予約を取る", new_reservation_path, class: "btn btn-success btn-lg" %>
+<div class="rayout">
+  <div class='main'>
+    <%= image_tag "main-car.jpg", class:'main-pict'%>
+    <% if user_signed_in? %>
+    <p class='scroll'>SCROLL</p>
+    <div class='contents'>
+      <%= image_tag "calendar-1.png", class:'sub-pict'%>
+      <div class="grid-1">
+        <h1 class='text'>教習予約はこちらから</h1>
+        <%= link_to "予約を取る", new_reservation_path, class: "btn btn-success btn-lg" %>
+      </div>
     </div>
-  </div>
-  <div class='contents'>
-    <%= image_tag "learning.png", class:'sub-pict'%>
-    <div class="grid-1">
-      <h1 class='text'>一問一答</h1>
-      <%= link_to "問題集", learnings_path, class: "btn btn-success btn-lg" %>
+    <div class='contents'>
+      <%= image_tag "learning.png", class:'sub-pict'%>
+      <div class="grid-1">
+        <h1 class='text'>一問一答</h1>
+        <%= link_to "問題集", learnings_path, class: "btn btn-success btn-lg" %>
+      </div>
     </div>
-  </div>
-  <div class='contents'>
-    <%= image_tag "car-1.png", class:'sub-pict'%>
-    <div class="grid-1">
-      <h1 class='text'>安全運転のポイント</h1>
-      <%= link_to "動画を見る", videos_path, class: "btn btn-success btn-lg" %>
+    <div class='contents'>
+      <%= image_tag "car-1.png", class:'sub-pict'%>
+      <div class="grid-1">
+        <h1 class='text'>安全運転のポイント</h1>
+        <%= link_to "動画を見る", videos_path, class: "btn btn-success btn-lg" %>
+      </div>
     </div>
+    <% end %>
   </div>
-  <% end %>
 </div>
