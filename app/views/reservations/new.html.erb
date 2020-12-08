@@ -17,8 +17,9 @@
   </div>
 
   <%= form_with model: @reservation, local: true do |f| %>
+
     <div class="reservation-box">
-      <%= f.date_select :start_time, {use_month_numbers: true, start_year: 2020} %>
+      <%= f.date_select :start_time, {use_month_numbers: true, start_year: 2020}, class:"reservation-select" %>
       <%= f.collection_select(:create_time_id, CreateTime.all, :id, :name, {}, {class:"reservation-select"}) %>
       <%= f.submit "予約を取る" ,class:"btn btn-success w-auto h-auto" %>
     </div>

@@ -11,10 +11,11 @@ class ReservationsController < ApplicationController
 
   def create
     @reservation = Reservation.new(reservation_params)
+    @reservations = Reservation.all
     if @reservation.save
       redirect_to new_reservation_path
     else
-      redirect_to new_reservation_path
+      render :new
     end
   end
 
