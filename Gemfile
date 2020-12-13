@@ -62,3 +62,7 @@ gem 'active_hash'
 gem 'pry-rails'
 
 gem 'rails-i18n'
+
+group :production do
+  gem 'unicorn', '5.4.1'
+end
