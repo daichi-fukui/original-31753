@@ -53,3 +53,11 @@ end
 after_fork do |_server, _worker|
   defined?(ActiveRecord::Base) && ActiveRecord::Base.establish_connection
 end
+
+
+こちらを行ってみてください！
+記述漏れがないかなど
+
+1,githubとec2をつなぐ記述
+2,uniconeとnginxの設定
+3,ec2インスタンスの再起動→uniconeとnginxの起動
