@@ -4,3 +4,6 @@ ja:
      user:
        family_name: 名字
        first_name: 名前
+     reservation:
+       start_time: 予約
+       create_time_id: 時間
