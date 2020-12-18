@@ -1,20 +1,24 @@
 <div class="rayout">
   <div class="m-5 h2">技能教習予約画面</div>
   <%= month_calendar events: @reservations do |date, reservations| %>
-    <%= date.day %>
+    <%= date.day %>  
     
     <% reservations.each do |reservation|%>
       <% if reservation.user_id == current_user.id %>
-        <div>
-          <%= link_to reservation.create_time.name, edit_reservation_path(reservation.id), class: "text-primary" %>
-        </div>
+        <%= link_to reservation.create_time.name, edit_reservation_path(reservation.id), class: "text-primary" %>
       <% end %>
     <% end %>
   <% end %>
 
-  <div class="m-5 font-weight-bold">
-    <p>※ 翌日以降の予約を取得してください</p>
+<% if @reservation.errors.any? %>
+  <div id="error_explanation" class="alert alert-danger">
+    <ul>
+      <% @reservation.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+    </ul>
   </div>
+<% end %>
 
   <%= form_with model: @reservation, local: true do |f| %>
     <div class="reservation-box form-inline">
@@ -23,4 +27,5 @@
       <%= f.submit "予約を取る" ,class:"btn btn-success w-auto h-auto" %>
     </div>
   <% end %>
+
 </div>

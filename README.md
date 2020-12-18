@@ -1,5 +1,5 @@
 ## アプリケーション名
-Diving school Life
+#### Diving school Life
 ![4e1a80d723657590d90fff3cdf9fcabe](https://user-images.githubusercontent.com/73151516/102453280-435b1900-407f-11eb-8154-9f66370f3f3a.gif)
 
 ## アプリケーション概要
