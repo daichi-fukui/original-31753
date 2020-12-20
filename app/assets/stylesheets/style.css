@@ -3,30 +3,32 @@ a{
   color: white;
 }
 
+.rayout{
+  flex: 1;
+}
+
 .body{
   display: flex;
   flex-flow: column;
   min-height: 100vh;
 }
 
-.rayout{
-  flex: 1;
-}
-
 .header-inner{
   display: flex;
   align-items: center;
+  justify-content: space-around;
+  position: relative;
   background-color: #003300;
   padding: 0 20px;
-  width: 100%;
   height: 60px;
 }
 
 .school-name{
   font-size: 25px;
-  margin: 0 250px 0 550px;
+  margin: 0;
+  line-height: 50px;
   text-shadow: 
-   2px  2px 1px black,
+   2px  2px 1px rgb(167, 163, 163),
   -2px  2px 1px black,
    2px -2px 1px black,
   -2px -2px 1px black,
@@ -37,7 +39,9 @@ a{
 }
 
 .item{
-  margin: 0 0 0 auto;
+  line-height: 50px;
+  position: absolute;
+  right: 0;
 }
 
 .btn{
@@ -100,9 +104,4 @@ input[type="submit"] {
 
 .field{
   margin: 20px 0;
-}
-
-.name-color{
-  color: white;
-  font-size: 20px;
 }
